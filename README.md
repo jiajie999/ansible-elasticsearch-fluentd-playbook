@@ -25,7 +25,7 @@ How to use:
     
         Enter your password
     
-    Waiting and pray :)
+    Hope all is well :)
     
     
 
