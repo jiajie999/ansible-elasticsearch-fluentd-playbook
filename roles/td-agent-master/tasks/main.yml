@@ -1,0 +1,5 @@
+---
+
+- name: Copy td-agent.conf
+  template: src=td-agent.conf dest=/etc/td-agent/td-agent.conf mode=0644 backup=yes
+  notify: restart td-agent

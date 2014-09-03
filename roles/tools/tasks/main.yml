@@ -1,0 +1,5 @@
+---
+- name: install by yum
+  yum: pkg={{ item }} state=installed
+  with_items:
+    - vim

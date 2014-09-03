@@ -1,0 +1,15 @@
+- name: Install-es-td
+  hosts: superm
+  user: root
+  roles:
+    - tools
+    - es
+    - td-agent
+
+
+- name: Install-td-master
+  hosts: td-master
+  user: root
+  roles:
+    - td-agent-master
+    - restart
