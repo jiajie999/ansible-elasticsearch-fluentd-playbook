@@ -16,6 +16,9 @@
 - name: install fluent-plugin-elasticsearch by gem
   command: /usr/lib64/fluent/ruby/bin/fluent-gem install fluent-plugin-elasticsearch
 
+- name: install fluent-plugin-elasticsearch by gem
+  command: /usr/lib64/fluent/ruby/bin/fluent-gem install fluent-plugin-dstat fluent-plugin-map
+
 - name: install fluent-plugin-mongo by gem
   command: /usr/lib64/fluent/ruby/bin/fluent-gem install fluent-plugin-mongo
 

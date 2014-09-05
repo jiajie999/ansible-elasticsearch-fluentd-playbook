@@ -2,8 +2,8 @@
   hosts: superm
   user: root
   roles:
-    - tools
-    - es
+#    - tools
+#    - es
     - td-agent
 
 
