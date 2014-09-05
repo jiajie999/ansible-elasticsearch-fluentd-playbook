@@ -3,3 +3,18 @@
   yum: pkg={{ item }} state=installed
   with_items:
     - vim
+    - ruby
+    - byobu
+    - htop
+    - python-devel
+
+- name: install pip
+  easy_install: name=pip
+
+- name: install virtualenv
+  pip: name={{ item }}
+  with_items:
+   - fluent-logger
+   - line_profiler
+   - flask
+
