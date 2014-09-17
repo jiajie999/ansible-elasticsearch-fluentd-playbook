@@ -1,4 +1,14 @@
 ---
+- name: Copy td.repo
+  template: src=beaker.repo dest=/etc/yum.repos.d/beaker.repo mode=0644
+
+- file: path=/etc/beaker/ state=directory mode=0644
+
+- name: Copy beaker.conf
+  template: src=beaker.conf dest=/etc/beaker/client.conf mode=0644
+
+
+
 - name: install by yum
   yum: pkg={{ item }} state=installed
   with_items:
@@ -6,12 +16,19 @@
     - ruby
     - byobu
     - htop
+    # dev tools
     - python-devel
+    - protobuf-devel.x86_64
+    - beaker-client
+    - beakerlib
+    - rhts-devel
+    - rhts-test-env
+    -   rhts-python
 
 - name: install pip
   easy_install: name=pip
 
-- name: install virtualenv
+- name: install dep-lib
   pip: name={{ item }}
   with_items:
    - fluent-logger

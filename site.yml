@@ -1,15 +1,18 @@
 - name: Install-es-td
-  hosts: superm
+  hosts: t28-29
+#  hosts: superm
   user: root
   roles:
-#    - tools
-#    - es
+    - tools
+    - es
     - td-agent
-
-
-- name: Install-td-master
-  hosts: td-master
-  user: root
-  roles:
-    - td-agent-master
     - restart
+
+
+#- name: Install-td-master
+##  hosts: td-master
+#  hosts: t28-29
+#  user: root
+#  roles:
+#    - td-agent-master
+#    - restart
