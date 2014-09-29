@@ -22,10 +22,7 @@
   command: /usr/share/elasticsearch/bin/plugin -install mobz/elasticsearch-head
 
 
-- name: Add Plugin elasticsearch-bigdesk
-  command: /usr/share/elasticsearch/bin/plugin -install lukas-vlcek/bigdesk
-
-- name: Add Plugin elasticsearch-bigdesk
+- name: Add Plugin elasticsearch-marvel
   command: /usr/share/elasticsearch/bin/plugin -i elasticsearch/marvel/latest
 
 

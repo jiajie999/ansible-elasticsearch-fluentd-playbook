@@ -23,7 +23,7 @@
     - beakerlib
     - rhts-devel
     - rhts-test-env
-    -   rhts-python
+    - rhts-python
 
 - name: install pip
   easy_install: name=pip
